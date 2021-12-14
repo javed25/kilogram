@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Permanent+Marker&family=Roboto:wght@300&family=Ubuntu:wght@300&family=Varela&display=swap');
+
+/* *{
+    margin: 0 !important;
+    padding: 0 !important;
+} */
+
+body{
+    font-family: 'Ubuntu'
+}
+
+.header__logo{
+    height: 75px;
+    cursor: pointer;
+    object-fit: contain;
+}
+.logo__text{
+    font-family: 'Permanent Marker' !important;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 16px;
+    object-fit: contain;
+    margin-top: -18px !important;
+    margin-left: 8px !important;
+}
+
+@layer components{
+    .navbtn{
+        @apply hidden h-8 md:inline-flex cursor-pointer hover:scale-125 transition-all duration-150 ease-out
+    }
+    .post__btns{
+        @apply h-7 hover:scale-125 cursor-pointer transition-all duration-150 ease-out
+    }
+}
+
+
