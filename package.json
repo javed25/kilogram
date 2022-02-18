@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "firebase deploy --only functions"
   },
   "dependencies": {
     "@headlessui/react": "^1.4.2",
@@ -11,6 +12,7 @@
     "@tailwindcss/forms": "^0.4.0",
     "faker": "^5.5.3",
     "firebase": "^9.6.1",
+    "firebase-functions": "^3.16.0",
     "firebase-tools": "^9.23.1",
     "git": "^0.1.5",
     "next": "latest",
